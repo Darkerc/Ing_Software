@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ing_Software
@@ -18,7 +12,22 @@ namespace Ing_Software
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            AbrirFormulario(new Login());
+            Properties.Settings.Default.Usuario = "Eder R.C";
+            Properties.Settings.Default.Save();
+            AbrirFormulario(new Participante.Main());
+        }
+
+        public void AbrirFormulario(Form ventana)
+        {
+            if (pnVentanas.Controls.Count > 0)
+                pnVentanas.Controls.RemoveAt(0);
+
+            ventana.TopLevel = false;
+            ventana.Dock = DockStyle.Fill;
+
+            pnVentanas.Controls.Add(ventana);
+            pnVentanas.Tag = ventana;
+            ventana.Show();
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -33,26 +42,19 @@ namespace Ing_Software
 
         protected override void OnPaintBackground(PaintEventArgs e)
         {
-            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+            try
+            {
+                using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
                                                                        Color.FromArgb(52, 235, 164),
                                                                        Color.FromArgb(52, 203, 237),
                                                                        0F))
-            {
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
+                {
+                    e.Graphics.FillRectangle(brush, this.ClientRectangle);
+                }
             }
-        }
-
-        public void AbrirFormulario(Form ventana)
-        {
-            if (pnVentanas.Controls.Count > 0)
-                pnVentanas.Controls.RemoveAt(0);
-
-            ventana.TopLevel = false;
-            ventana.Dock = DockStyle.Fill;
-
-            pnVentanas.Controls.Add(ventana);
-            pnVentanas.Tag = ventana;
-            ventana.Show();
+            catch
+            {
+            }
         }
     }
 }

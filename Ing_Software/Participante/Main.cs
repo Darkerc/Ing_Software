@@ -15,6 +15,7 @@ namespace Ing_Software.Participante
         public Main()
         {
             InitializeComponent();
+            Console.WriteLine(Properties.Settings.Default.Usuario);
         }
     }
 }

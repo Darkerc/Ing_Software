@@ -143,6 +143,16 @@ namespace Ing_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap store_local_shop_building_512 {
+            get {
+                object obj = ResourceManager.GetObject("store_local_shop_building-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap usuario_registrados {
             get {
                 object obj = ResourceManager.GetObject("usuario-registrados", resourceCulture);

@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace Ing_Software.Properties
 {
 
@@ -18,6 +20,7 @@ namespace Ing_Software.Properties
     {
 
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+        internal Color myColor;
 
         public static Settings Default
         {
@@ -26,5 +29,7 @@ namespace Ing_Software.Properties
                 return defaultInstance;
             }
         }
+
+        public object Usuario { get; internal set; }
     }
 }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BarraDeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\BarraDeControl.Designer.cs">
+      <DependentUpon>BarraDeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Componentes\BorderRPicture.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nutricionista\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutricionista\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Participante\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controles\BarraDeControl.resx">
+      <DependentUpon>BarraDeControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controles\AsideBar.resx">
       <DependentUpon>AsideBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,9 +171,7 @@
     <None Include="Resources\usuario-registrados.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Administrador\" />
-    <Folder Include="Nutricionista\" />
-    <Folder Include="Proveedor\" />
+    <None Include="Resources\store_local_shop_building-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

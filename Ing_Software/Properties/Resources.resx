@@ -139,10 +139,13 @@
   <data name="ENGRANAJES-BLANCOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ENGRANAJES-BLANCOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="usuario-registrados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario-registrados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="descargar (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descargar (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuario-registrados" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuario-registrados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="store_local_shop_building-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store_local_shop_building-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
