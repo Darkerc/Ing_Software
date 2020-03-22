@@ -11,6 +11,11 @@ namespace ProyectoBBDD.Controles
             InitializeComponent();
         }
 
+        public void setCaption(String caption)
+        {
+            lbCabecera.Text = caption;
+        }
+
         //Movimiento de la ventana
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();

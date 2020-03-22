@@ -15,6 +15,7 @@ namespace Ing_Software
             Properties.Settings.Default.Usuario = "Eder R.C";
             Properties.Settings.Default.Save();
             AbrirFormulario(new Participante.Main());
+            bcPrincipal.setCaption("Titulo de la aplicacion");
         }
 
         public void AbrirFormulario(Form ventana)

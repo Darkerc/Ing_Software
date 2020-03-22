@@ -28,33 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbCalorias = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnViews = new System.Windows.Forms.Panel();
+            this.asideBar1 = new Ing_Software.Controles.AsideBar();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 136);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Esta es la ventana principal de los participantes";
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Ing_Software.Properties.Resources._107831;
+            this.pictureBox1.Location = new System.Drawing.Point(662, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // lbCalorias
+            // 
+            this.lbCalorias.AutoSize = true;
+            this.lbCalorias.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCalorias.Location = new System.Drawing.Point(3, 9);
+            this.lbCalorias.Name = "lbCalorias";
+            this.lbCalorias.Size = new System.Drawing.Size(148, 22);
+            this.lbCalorias.TabIndex = 10;
+            this.lbCalorias.Text = "Tus calorias : 80";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lbCalorias);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(300, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(700, 45);
+            this.panel1.TabIndex = 12;
+            // 
+            // pnViews
+            // 
+            this.pnViews.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnViews.Location = new System.Drawing.Point(300, 45);
+            this.pnViews.Name = "pnViews";
+            this.pnViews.Size = new System.Drawing.Size(700, 625);
+            this.pnViews.TabIndex = 13;
+            // 
+            // asideBar1
+            // 
+            this.asideBar1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.asideBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.asideBar1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.asideBar1.Location = new System.Drawing.Point(0, 0);
+            this.asideBar1.Name = "asideBar1";
+            this.asideBar1.Size = new System.Drawing.Size(300, 670);
+            this.asideBar1.TabIndex = 1;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 337);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1000, 670);
+            this.Controls.Add(this.pnViews);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.asideBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private Ing_Software.Controles.AsideBar asideBar1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbCalorias;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnViews;
     }
 }

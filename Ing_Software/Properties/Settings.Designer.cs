@@ -20,7 +20,6 @@ namespace Ing_Software.Properties
     {
 
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-        internal Color myColor;
 
         public static Settings Default
         {

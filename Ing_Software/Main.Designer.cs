@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.pnVentanas = new System.Windows.Forms.Panel();
-            this.barraDeControl1 = new ProyectoBBDD.Controles.BarraDeControl();
+            this.bcPrincipal = new ProyectoBBDD.Controles.BarraDeControl();
             this.SuspendLayout();
             // 
             // pnVentanas
             // 
             this.pnVentanas.Location = new System.Drawing.Point(0, 35);
             this.pnVentanas.Name = "pnVentanas";
-            this.pnVentanas.Size = new System.Drawing.Size(900, 616);
+            this.pnVentanas.Size = new System.Drawing.Size(1000, 670);
             this.pnVentanas.TabIndex = 0;
             // 
-            // barraDeControl1
+            // bcPrincipal
             // 
-            this.barraDeControl1.AutoSize = true;
-            this.barraDeControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barraDeControl1.Location = new System.Drawing.Point(0, 0);
-            this.barraDeControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.barraDeControl1.Name = "barraDeControl1";
-            this.barraDeControl1.Size = new System.Drawing.Size(900, 35);
-            this.barraDeControl1.TabIndex = 2;
+            this.bcPrincipal.AutoSize = true;
+            this.bcPrincipal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bcPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.bcPrincipal.Margin = new System.Windows.Forms.Padding(0);
+            this.bcPrincipal.Name = "bcPrincipal";
+            this.bcPrincipal.Size = new System.Drawing.Size(1000, 35);
+            this.bcPrincipal.TabIndex = 2;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 650);
-            this.Controls.Add(this.barraDeControl1);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.Controls.Add(this.bcPrincipal);
             this.Controls.Add(this.pnVentanas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
@@ -69,7 +69,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnVentanas;
-        private ProyectoBBDD.Controles.BarraDeControl barraDeControl1;
+        private ProyectoBBDD.Controles.BarraDeControl bcPrincipal;
     }
 }
 

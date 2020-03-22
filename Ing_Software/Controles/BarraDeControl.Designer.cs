@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarraDeControl));
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconoBarraPrincipal = new System.Windows.Forms.PictureBox();
-            this.labelCabecera = new System.Windows.Forms.Label();
+            this.lbCabecera = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.iconoBarraPrincipal);
-            this.panel1.Controls.Add(this.labelCabecera);
+            this.panel1.Controls.Add(this.lbCabecera);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -65,19 +65,19 @@
             this.iconoBarraPrincipal.TabIndex = 3;
             this.iconoBarraPrincipal.TabStop = false;
             // 
-            // labelCabecera
+            // lbCabecera
             // 
-            this.labelCabecera.BackColor = System.Drawing.Color.Transparent;
-            this.labelCabecera.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCabecera.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCabecera.ForeColor = System.Drawing.Color.Black;
-            this.labelCabecera.Location = new System.Drawing.Point(0, 0);
-            this.labelCabecera.Name = "labelCabecera";
-            this.labelCabecera.Size = new System.Drawing.Size(688, 35);
-            this.labelCabecera.TabIndex = 4;
-            this.labelCabecera.Text = "Titulo de prueba";
-            this.labelCabecera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelCabecera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelCabecera_MouseDown);
+            this.lbCabecera.BackColor = System.Drawing.Color.Transparent;
+            this.lbCabecera.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCabecera.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCabecera.ForeColor = System.Drawing.Color.Black;
+            this.lbCabecera.Location = new System.Drawing.Point(0, 0);
+            this.lbCabecera.Name = "lbCabecera";
+            this.lbCabecera.Size = new System.Drawing.Size(688, 35);
+            this.lbCabecera.TabIndex = 4;
+            this.lbCabecera.Text = "Texto de ejemplo\r\n";
+            this.lbCabecera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCabecera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelCabecera_MouseDown);
             // 
             // btnMinimizar
             // 
@@ -128,7 +128,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox iconoBarraPrincipal;
-        private System.Windows.Forms.Label labelCabecera;
+        private System.Windows.Forms.Label lbCabecera;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
     }
