@@ -1,12 +1,5 @@
 ﻿using Ing_Software.Participante.Controles;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ing_Software.Participante
@@ -16,7 +9,8 @@ namespace Ing_Software.Participante
         public Main()
         {
             InitializeComponent();
-            AbrirFormulario(new BuyView());
+            bcPrincipal.setParentForm(this);
+            AbrirFormulario(new MenuView());
             //Console.WriteLine(Properties.Settings.Default.Usuario);
         }
 

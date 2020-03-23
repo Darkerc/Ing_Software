@@ -64,10 +64,10 @@
     <Compile Include="Componentes\BorderRPicture.Designer.cs">
       <DependentUpon>BorderRPicture.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controles\AsideBar.cs">
+    <Compile Include="Participante\Controles\AsideBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controles\AsideBar.Designer.cs">
+    <Compile Include="Participante\Controles\AsideBar.Designer.cs">
       <DependentUpon>AsideBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Participante\BuyView.cs">
@@ -82,11 +82,35 @@
     <Compile Include="Participante\Controles\CarouselProducts.Designer.cs">
       <DependentUpon>CarouselProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Participante\Controles\DateItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Participante\Controles\DateItem.Designer.cs">
+      <DependentUpon>DateItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participante\Controles\ObservationsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Participante\Controles\ObservationsItem.Designer.cs">
+      <DependentUpon>ObservationsItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Participante\Controles\ProductListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Participante\Controles\ProductListItem.Designer.cs">
       <DependentUpon>ProductListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participante\ControlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participante\ControlView.Designer.cs">
+      <DependentUpon>ControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participante\DatesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participante\DatesView.Designer.cs">
+      <DependentUpon>DatesView.cs</DependentUpon>
     </Compile>
     <Compile Include="Participante\MenuView.cs">
       <SubType>Form</SubType>
@@ -141,7 +165,7 @@
     <EmbeddedResource Include="Controles\BarraDeControl.resx">
       <DependentUpon>BarraDeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controles\AsideBar.resx">
+    <EmbeddedResource Include="Participante\Controles\AsideBar.resx">
       <DependentUpon>AsideBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Participante\BuyView.resx">
@@ -150,8 +174,20 @@
     <EmbeddedResource Include="Participante\Controles\CarouselProducts.resx">
       <DependentUpon>CarouselProducts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Participante\Controles\DateItem.resx">
+      <DependentUpon>DateItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participante\Controles\ObservationsItem.resx">
+      <DependentUpon>ObservationsItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Participante\Controles\ProductListItem.resx">
       <DependentUpon>ProductListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participante\ControlView.resx">
+      <DependentUpon>ControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participante\DatesView.resx">
+      <DependentUpon>DatesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Participante\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
@@ -241,6 +277,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2139635.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\815128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-line.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

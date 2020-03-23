@@ -123,9 +123,29 @@ namespace Ing_Software.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _815128 {
+            get {
+                object obj = ResourceManager.GetObject("815128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap approved_button_check_green_round_tick_okay {
             get {
                 object obj = ResourceManager.GetObject("approved-button-check-green-round-tick-okay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_line {
+            get {
+                object obj = ResourceManager.GetObject("calendar-line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

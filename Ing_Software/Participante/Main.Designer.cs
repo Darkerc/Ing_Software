@@ -32,7 +32,7 @@
             this.lbCalorias = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnViews = new System.Windows.Forms.Panel();
-            this.asideBar1 = new Ing_Software.Controles.AsideBar();
+            this.bcPrincipal = new Ing_Software.Controles.AsideBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,15 +78,15 @@
             this.pnViews.Size = new System.Drawing.Size(700, 625);
             this.pnViews.TabIndex = 13;
             // 
-            // asideBar1
+            // bcPrincipal
             // 
-            this.asideBar1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.asideBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.asideBar1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.asideBar1.Location = new System.Drawing.Point(0, 0);
-            this.asideBar1.Name = "asideBar1";
-            this.asideBar1.Size = new System.Drawing.Size(300, 670);
-            this.asideBar1.TabIndex = 1;
+            this.bcPrincipal.BackColor = System.Drawing.SystemColors.Desktop;
+            this.bcPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bcPrincipal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bcPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.bcPrincipal.Name = "bcPrincipal";
+            this.bcPrincipal.Size = new System.Drawing.Size(300, 670);
+            this.bcPrincipal.TabIndex = 1;
             // 
             // Main
             // 
@@ -96,7 +96,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 670);
             this.Controls.Add(this.pnViews);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.asideBar1);
+            this.Controls.Add(this.bcPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -109,7 +109,7 @@
         }
 
         #endregion
-        private Ing_Software.Controles.AsideBar asideBar1;
+        private Ing_Software.Controles.AsideBar bcPrincipal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbCalorias;
         private System.Windows.Forms.Panel panel1;
